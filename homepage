@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Google Sans', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #202124;
+    }
+
+    .navbar {
+      background-color: white;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #1a73e8;
+    }
+
+    .nav-links a {
+      color: #5f6368;
+      text-decoration: none;
+      margin-left: 24px;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #1a73e8 0%, #185abc 100%);
+      color: white;
+      padding: 120px 20px 80px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 600px;
+      margin: 0 auto 32px;
+    }
+
+    .cta-button {
+      background-color: white;
+      color: #1a73e8;
+      padding: 12px 32px;
+      border-radius: 24px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .features {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+    }
+
+    .feature-card {
+      background: white;
+      padding: 32px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .feature-icon {
+      font-size: 48px;
+      color: #1a73e8;
+      margin-bottom: 24px;
+    }
+
+    .feature-card h3 {
+      margin: 0 0 16px;
+      color: #202124;
+    }
+
+    .feature-card p {
+      color: #5f6368;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .pricing {
+      background-color: #f8f9fa;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .pricing h2 {
+      margin-bottom: 48px;
+      color: #202124;
+    }
+
+    .footer {
+      background-color: #202124;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 16px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+      
+      .hero p {
+        font-size: 18px;
+      }
+      
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-content">
+      <div class="logo">AI Sheet Assistant</div>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Supercharge Your Spreadsheets with AI</h1>
+    <p>Transform complex spreadsheet tasks into simple conversations. Let AI handle the heavy lifting while you focus on what matters.</p>
+    <a href="#" class="cta-button">Install Now</a>
+  </section>
+
+  <section class="features" id="features">
+    <div class="feature-card">
+      <div class="feature-icon">
+        <i class="fas fa-magic"></i>
+      </div>
+      <h3>Smart Formula Generation</h3>
+      <p>Describe what you want to calculate in plain English, and let AI create the perfect formula for you.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">
+        <i class="fas fa-chart-line"></i>
+      </div>
+      <h3>Intelligent Analysis</h3>
+      <p>Get instant insights and visualizations from your data with natural language requests.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">
+        <i class="fas fa-robot"></i>
+      </div>
+      <h3>AI-Powered Automation</h3>
+      <p>Automate repetitive tasks and complex spreadsheet operations with simple commands.</p>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <h2>Simple, Transparent Pricing</h2>
+    <div class="plans-container">
+      <!-- Your existing pricing cards will be displayed here -->
+    </div>
+  </section>
+
+  <footer class="footer">
+    <a href="terms.html">Terms of Service</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="mailto:support@example.com">Support</a>
+  </footer>
+</body>
+</html>
